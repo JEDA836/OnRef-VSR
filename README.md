@@ -46,3 +46,6 @@ Please open an issue if you have any questions.
 ## 📜 License
 
 MIT License
+
+## Acknowledgement
+The codes are heavily based on [BasicVSR++](https://github.com/ckkelvinchan/BasicVSR_PlusPlus). Please also follow their licenses. Thanks for their awesome works.
