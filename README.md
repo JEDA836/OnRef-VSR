@@ -1,2 +1,49 @@
 # OnRef-VSR
+# Project Title
 
+OnRef-VSR achieves real-time, online reference-based video super-resolution through efficient temporal and spatial transfers.
+This repository is under continuous update — code and documents will be gradually uploaded.
+
+---
+
+## 📌 Progress Checklist
+
+### Core Features
+- [X] Initial code structure
+- [ ] Basic training pipeline
+- [X] Preprocessing scripts
+- [ ] Full model implementation
+- [X] Evaluation metrics
+- [ ] Inference demo
+- [ ] Pretrained weights
+- [ ] Documentation & examples
+
+---
+
+## 📁 Repository Structure
+```
+project/
+│── data/
+│── data/
+│── mmedit/
+│── data/
+│── tools/
+│── README.md
+```
+---
+
+## 🚀 Installation
+
+
+## 📝 Notes
+
+This repository is being updated gradually.
+Missing files or modules will be added in upcoming updates.
+
+## 📬 Contact
+
+Please open an issue if you have any questions.
+
+## 📜 License
+
+MIT License
