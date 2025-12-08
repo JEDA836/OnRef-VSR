@@ -318,9 +318,10 @@ class OnRefVSR(nn.Module):
             feature_last = hr  
 
             hr = self.conv_last(hr)
+            hlq = self.img_upsample(lqs[:, i, :, :, :])
 
             if i==0:
-                map = self.LNT(gt0,hr,1)
+                map = self.LNT(gt0,hlq,1)
                 n, t, c, h, w = flows.size()
                 flows = F.interpolate(flows.view(-1,c,h,w), scale_factor=4, mode='bilinear', align_corners=False).view(n,t,c,h*4,w*4)
                 map_warp = self.gen_warp_para(map, flows)
@@ -329,9 +330,10 @@ class OnRefVSR(nn.Module):
 
             else:
                 map_a,map_x0,map_k,map_q,map_c,map_e = map_warp[:, i-1, :, :, :][:,:1],map_warp[:, i-1, :, :, :][:,1:2],map_warp[:, i-1, :, :, :][:,2:3],map_warp[:, i-1, :, :, :][:,3:4],map_warp[:, i-1, :, :, :][:,4:5],map_warp[:, i-1, :, :, :][:,5:6]
-                hr = map_a / (1 + map_q*torch.exp(map_k * (hr - map_x0)))  + map_c + map_e * hr
+                rlq= map_a / (1 + map_q*torch.exp(map_k * (hlq - map_x0)))  + map_c + map_e * hlq
+                # hr += rlq
+                hr = self.conv_fusion(torch.cat([rlq,hr],dim=1))
 
-            hr = self.conv_fusion(torch.cat([self.img_upsample(lqs[:, i, :, :, :]),hr],dim=1))
 
             outputs.append(hr)
 
