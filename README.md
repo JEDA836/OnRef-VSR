@@ -1,5 +1,4 @@
 # OnRef-VSR
-# Project Title
 
 OnRef-VSR achieves real-time, online reference-based video super-resolution through efficient temporal and spatial transfers.
 This repository is under continuous update — code and documents will be gradually uploaded.
