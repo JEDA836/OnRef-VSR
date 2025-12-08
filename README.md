@@ -9,11 +9,11 @@ This repository is under continuous update — code and documents will be gradua
 
 ### Core Features
 - [X] Initial code structure
-- [ ] Basic training pipeline
 - [X] Preprocessing scripts
 - [X] Full model implementation
 - [X] Evaluation metrics
 - [ ] Inference demo
+- [ ] Basic training pipeline
 - [ ] Pretrained weights
 - [ ] Documentation & examples
 
