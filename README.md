@@ -11,7 +11,7 @@ This repository is under continuous update — code and documents will be gradua
 - [X] Initial code structure
 - [ ] Basic training pipeline
 - [X] Preprocessing scripts
-- [ ] Full model implementation
+- [X] Full model implementation
 - [X] Evaluation metrics
 - [ ] Inference demo
 - [ ] Pretrained weights
@@ -23,7 +23,7 @@ This repository is under continuous update — code and documents will be gradua
 ```
 project/
 │── data/
-│── data/
+│── models/
 │── mmedit/
 │── data/
 │── tools/
