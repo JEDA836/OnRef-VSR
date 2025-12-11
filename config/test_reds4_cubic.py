@@ -2,7 +2,7 @@ exp_name = 'test'
 
 # model settings
 model = dict(
-    type='BasicVSR',
+    type='OnRefVSR',
     generator=dict(
         type='OnRefVSR',
         mid_channels=64,
