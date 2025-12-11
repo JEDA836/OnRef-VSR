@@ -13,7 +13,7 @@ This repository is under continuous update — code and documents will be gradua
 - [X] Full model implementation
 - [X] Evaluation metricsX
 - [X] Inference demo
-- [ ] Basic training pipeline
+- [X] Basic training pipeline
 - [ ] Pretrained weights
 - [ ] Documentation & examples
 
