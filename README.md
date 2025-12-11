@@ -11,8 +11,8 @@ This repository is under continuous update — code and documents will be gradua
 - [X] Initial code structure
 - [X] Preprocessing scripts
 - [X] Full model implementation
-- [X] Evaluation metrics
-- [ ] Inference demo
+- [X] Evaluation metricsX
+- [X] Inference demo
 - [ ] Basic training pipeline
 - [ ] Pretrained weights
 - [ ] Documentation & examples
